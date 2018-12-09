@@ -1,0 +1,31 @@
+{
+  "name": "typescript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch \"private/**/*.ts\" --exec \"ts-node\" private/index.ts",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourWishes/Typescript-Test.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YourWishes/Typescript-Test/issues"
+  },
+  "homepage": "https://github.com/YourWishes/Typescript-Test#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.7",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
